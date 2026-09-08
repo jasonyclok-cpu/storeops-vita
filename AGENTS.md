@@ -7,9 +7,10 @@ These rules apply to all Codex work in this repository unless a task explicitly 
 Before product/design work, read:
 
 - `docs/STOREOPS_PAYMENT_VALIDATION_BASELINE_V4.md`
+- `docs/STOREOPS_GHOST_DEMAND_BOUNDARY.md`
 - `.agents/skills/frontend-app-builder/SKILL.md` for frontend/design work
 
-When older prompts conflict with the v4 payment-validation baseline, v4 wins.
+When older prompts conflict with the v4 payment-validation baseline, v4 wins. The StoreOps × Ghost Demand boundary document is a scope guardrail: StoreOps owns live purchase-path verification; Ghost Demand owns unmet-demand/product-opportunity discovery. Do not blend them into a generic AI Shopify growth audit.
 
 ## 2. Review Artifact Gate — mandatory
 
@@ -66,6 +67,7 @@ Continue autonomously through non-destructive work. If multiple owner/manual act
 For the current StoreOps payment-validation stage:
 
 - do not turn StoreOps into an SEO/GEO/AEO/AIO audit SaaS;
+- do not add Ghost Demand-style unmet-demand/product-opportunity discovery into StoreOps;
 - do not fabricate findings, revenue-loss estimates, health scores, testimonials, or customer logos;
 - uncertainty is WARN, not FAIL;
 - do not require an OpenAI API key;
